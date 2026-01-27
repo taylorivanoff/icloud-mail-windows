@@ -134,8 +134,6 @@ function createTray() {
   tray.setContextMenu(Menu.buildFromTemplate([
     { label: `Show ${APP_NAME}`, click: () => { if (!mainWindow) createWindow(); mainWindow.show(); } },
     { type: 'separator' },
-    { label: 'Compose', click: () => { if (!mainWindow) createWindow(); mainWindow.show(); mainWindow.webContents.executeJavaScript('document.querySelector("[data-click=compose]")?.click()'); } },
-    { type: 'separator' },
     { label: 'Check for Updates', click: () => autoUpdater.checkForUpdatesAndNotify() },
     { label: 'Quit', click: () => { isQuitting = true; app.quit(); } }
   ]));
@@ -143,11 +141,7 @@ function createTray() {
 }
 
 function setupJumpList() {
-  app.setJumpList([
-    { type: 'tasks', items: [
-      { type: 'task', title: 'Compose', description: 'Write a new email', program: process.execPath, args: `${PROTOCOL}://compose`, iconPath: process.execPath, iconIndex: 0 }
-    ]}
-  ]);
+  app.setJumpList([]);
 }
 
 function setupAutoUpdater() {
