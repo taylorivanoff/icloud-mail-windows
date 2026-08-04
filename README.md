@@ -1,11 +1,13 @@
-# iCloud Mail for Windows
+# iCloud Mail for Windows — Unofficial Desktop App
 
 [![Release](https://img.shields.io/github/v/release/taylorivanoff/icloud-mail-windows)](https://github.com/taylorivanoff/icloud-mail-windows/releases)
 [![Downloads](https://img.shields.io/github/downloads/taylorivanoff/icloud-mail-windows/total)](https://github.com/taylorivanoff/icloud-mail-windows/releases)
 [![License](https://img.shields.io/github/license/taylorivanoff/icloud-mail-windows)](LICENSE)
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-support-yellow?style=flat&logo=buy-me-a-coffee)](https://buymeacoffee.com/taylorivanoff)
 
-A native Windows application for accessing iCloud Mail from [icloud.com](https://www.icloud.com/).
+Unofficial **iCloud Mail for Windows** desktop app. Access iCloud Mail from [icloud.com](https://www.icloud.com/) in a dedicated Electron client with system tray, auto-updates, and shared Apple ID authentication.
+
+Use Apple iCloud Mail on Windows in a tray-based desktop app — stay signed in, auto-update, and skip the browser.
 
 ## Features
 
@@ -36,6 +38,10 @@ bun run start
 ```bash
 bun run release
 ```
+
+## Keywords
+
+iCloud Mail for Windows, Apple Mail Windows app, @icloud.com email desktop, unofficial iCloud Mail PC client
 
 ## Contributing
 
